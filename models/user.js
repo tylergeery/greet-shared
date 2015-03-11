@@ -15,8 +15,8 @@ var userSchema = new Schema({
   activeImages: [String],
   groups: [String],
   isAdmin : {type: Number, default: 0},
-  created_at: { type: Date, default: Date.now },
-  updated_at: { type: Date, default: Date.now },
+  createdAt: { type: Date, default: Date.now },
+  updatedAt: { type: Date, default: Date.now },
   karma: { type: Number, default: 0}
 });
 
