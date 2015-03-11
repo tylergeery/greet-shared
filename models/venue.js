@@ -2,12 +2,12 @@ var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
 var venueSchema = new Schema({
-  title:  String,
+  title: String,
   contact: {
   	email: String,
   	name: String,
-  	phone: String
-  	title : String
+  	phone: String,
+  	title: String
   },
   images: [String],
   description: String,
@@ -16,7 +16,7 @@ var venueSchema = new Schema({
   popularity: { type: Number, default: 0},
   reviews: {
   	name: Number, default: 0,
-  	created_at: type: Date,
+  	created_at: { type: Date },
   	content: String
   },
   occupancy: Number // # of groups allowed

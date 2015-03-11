@@ -2,7 +2,7 @@ var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
 var groupSchema = new Schema({
-  title:  String,
+  title: String,
   description: String,
   users: [{ body: String, date: Date }],
   location: String,
