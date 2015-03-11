@@ -8,12 +8,12 @@ var groupSchema = new Schema({
   location: String,
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now },
-  dates: { type: Number, default: 0},
-  karma: { type: Number, default: 0},
+  dates: { type: Number, default: 0 },
+  karma: { type: Number, default: 0 },
   messages: [{
     author: String,
     content: String,
-    createdAt: type: Date
+    createdAt: { type: Date }
   }],
 });
 
